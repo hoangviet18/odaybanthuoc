@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+    /* Hover để mở dropdown */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* loại bỏ khoảng cách nhảy */
+    }
+	.navbar-nav {
+  	width: 100%;
+  	justify-content: space-between; /* hoặc space-around để có khoảng cách đều hơn */
+	}

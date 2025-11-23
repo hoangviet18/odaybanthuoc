@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ở Đây Bán Thuốc - Hệ thống nhà thuốc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../../../../bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="../../../../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/bb4a4903bc.js" crossorigin="anonymous"></script>
+
+<!--Card_Slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../css/cardslider.css"/>
+
+<!--color_css-->
+<link rel="stylesheet" type="text/css" href="../css/color.css">
+
+<!--my_style_css-->
+<link rel="stylesheet" type="text/css" href="../css/my_style.css">
+<link rel="stylesheet" href="../css/timkiem.css">
+<link rel="stylesheet" href="../css/banner.css"/>
+<link rel="stylesheet" href="../css/Navbar.css"/>
+<link rel="stylesheet" href="../css/DS.css"/>
+	
+<!--icon web-->
+<link rel="icon" href="../img/logo/icon/iconweb.svg" type="image/x-icon">
+
+<style>
+        /* Tùy chỉnh nhỏ để giao diện giống hình hơn */
+        .container-custom {
+            max-width: 1000px; /* Giới hạn chiều rộng để tập trung nội dung */
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .sidebar-left {
+            background-color: #f8f9fa; /* Màu nền nhẹ cho cột tìm kiếm */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .custom-card-body .row {
+            --bs-gutter-x: 1.5rem; /* Khoảng cách giữa các cột trong row */
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            font-size: 24px;
+            color: #007bff; /* Màu xanh dương tương tự trong hình */
+            margin-right: 15px;
+        }
+        .feature-content h6 {
+            color: #333;
+            font-weight: bold;
+        }
+        .feature-content p {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+	
+
+<body>
+<!--Banner-->
+<div class="banner">
+	<div class="container-lg">
+		<div class="row">
+			<a href="../../index.html" class="col-lg-3 col-md-4 col-sm-5 col-6">
+				<img src="../img/logo/icon/LOGO_ICON_TEXT.svg" alt="..." class=""/>
+			</a>
+			<div class="col-lg-9 col-md-8 col-sm-7 col-6 d-flex justify-content-end">
+				<div class="d-flex align-items-center gap-2">
+					<!-- Timkiem -->
+					<button type="button" class="btn btn-primary my-custom-btn-blue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-search me-2"></i>
+						<span class="btn-sm d-none d-md-inline">Tìm Kiếm</span>
+					</button>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="GioHang.html">
+						<i class="bi bi-capsule pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Giỏ thuốc</span>
+						<span class="position-absolute rounded-pill translate-middle bg-danger ps-2 pe-2 ms-2 ps-ms-1 pe-ms-1 ms-2" style="font-size: 12px">
+							69
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</a>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="Login.html"> 
+						<i class="bi bi-person-fill pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Đăng nhập</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #e3f2fd;" data-bs-theme="light">
+	<div class="container-lg">
+    <!-- Nút bật menu khi thu nhỏ -->
+    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    	<h1 class="m-0"><i class="bi bi-justify my-text-blue"></i></h1>
+    </button>
+
+	<!-- Menu dạng trượt ngang -->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<img src="../../img/logo/icon/Log2.svg" alt="logo" style="height: 50px;"/>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown" data-bs-auto-close="false">
+						<a class="nav-link dropdown-toggle" href="Thucphamchucnang.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thực phẩm chức năng
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle p-0 m-0 my-text-blue"></i> Vitamin &amp; Khoáng chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-tablets my-text-blue"></i> Sinh lý - Nội tiết tố</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-capsules my-text-blue"></i> Cải thiện tăng cường chức năng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle-medical my-text-blue"></i> Hỗ trợ điều trị</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-poop my-text-blue"></i> Hỗ trợ tiêu hóa</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-brain my-text-blue"></i> Thần kinh não</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-droplet my-text-blue"></i> Hỗ trợ làm đẹp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-heart my-text-blue"></i> Sức khỏ tim mạch</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-weight-scale my-text-blue"></i> Dinh dưỡng</a>
+									</div>
+								</div>
+					</li>
+					
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dược mỹ phẩm
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-mask my-text-blue"></i>  Chăm sóc da mặt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-soap my-text-blue"></i>  Chăm sóc cơ thể</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-pump-soap my-text-blue"></i>  Giải pháp làn da</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Chăm sóc tóc - da đầu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-face-grin-hearts my-text-blue"></i>  Mỹ phẩm trang điểm</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-eye my-text-blue"></i>  Chăm sóc da vùng mắt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Chăm sóc da mặt.html"><i class="fa-solid fa-leaf my-text-blue"></i>  Sản phẩm từ thiên nhiên</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thuốc-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thuốc
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="#chuacapnhat.html"><i class="fa-solid fa-magnifying-glass my-text-blue"></i>  Tra cứu thuốc</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-bong my-text-blue"></i>  Tra cứu dược chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-cannabis my-text-blue"></i> Tra cứu dược liệu</a>
+									</div>
+								</div>
+					</li>
+
+					<!--Chăm sóc cá nhân-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Chăm sóc cá nhân
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-venus-mars my-text-blue"></i>  Hỗ trợ tình dục</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-bread-slice my-text-blue"></i>  Thực phẩm - đồ uống</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Vệ sinh cá nhân</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-tooth my-text-blue"></i>  Chăm sóc răng miệng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-house-chimney-medical my-text-blue"></i>  Đồ dùng gia đình</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-boxes-packing my-text-blue"></i>  Hàng tổng hợp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-bottle-droplet my-text-blue"></i>  Tinh dầu các loại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-wine-bottle my-text-blue"></i>  Thiết bị làm đẹp</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thiết bị y tế-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thiết bị y tế
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-syringe my-text-blue"></i>  Dụng cụ y tế</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-stethoscope my-text-blue"></i>  Dụng cụ theo dõi</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-briefcase-medical my-text-blue"></i>  Dụng cụ sơ cứu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-mask-face my-text-blue"></i>  Khẩu trang</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Tiêm chủng-->
+					<a class="nav-link" href="chuacapnhat.html" role="button" aria-expanded="false">
+						Tiêm chủng
+					</a>	
+
+					<!--Bệnh & Sức khỏe-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Bệnh &amp; Góc sức khỏe
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Góc sức khỏe</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Chuyên trang ung thư</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-bookmark my-text-blue"></i>  Bệnh thường gặp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-bell my-text-blue"></i>  Tin khuyến mại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="chuacapnhat.html"><i class="fa-solid fa-star my-text-blue"></i>  Truyền thông</a>
+									</div>
+								</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!--Breakcrumb-->
+<nav aria-label="breadcrumb" class="container pt-2">
+	<ol class="breadcrumb ps-2">
+		<li class="breadcrumb-item"><a href="../../index.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-blue">Trang Chủ</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Hệ thống nhà thuốc</li>
+	</ol>
+</nav>
+
+<div class="container container-custom">
+        <h2 class="mb-3">Hệ thống nhà thuốc trên toàn quốc</h2>
+        <p class="mb-4 text-muted">Thời gian hoạt động: 6:00 - 23:00 hàng ngày (Thay đổi tùy theo từng nhà thuốc)</p>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="sidebar-left">
+                    <ul class="nav nav-tabs mb-3" id="pharmacyTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="search-tab" data-bs-toggle="tab" data-bs-target="#search" type="button" role="tab" aria-controls="search" aria-selected="true">Tìm kiếm nhà thuốc</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nearby-tab" data-bs-toggle="tab" data-bs-target="#nearby" type="button" role="tab" aria-controls="nearby" aria-selected="false">Nhà thuốc gần bạn</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pharmacyTabContent">
+                        <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
+                            
+                            <div class="alert alert-info py-2" role="alert">
+								Đơn vị hành chính đã thay đổi theo quy định. <br> Tra cứu địa chỉ trước và sau sáp nhập.
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Tìm bằng tên đường và tỉnh thành" aria-label="Tìm bằng tên đường và tỉnh thành">
+                            </div>
+
+                            <p class="text-center text-muted">hoặc</p>
+
+                            <div class="mb-3">
+                                <select class="form-select" aria-label="Chọn Tỉnh/Thành phố">
+                                    <option selected>Chọn Tỉnh/Thành phố</option>
+									<option value="1">An Giang</option>
+                                    <option value="2">TP. Hồ Chí Minh</option>
+                                    <option value="3">Kiên Giang</option>
+                                    <option value="4">TP. Đà Nẵng</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <select class="form-select" aria-label="Chọn Phường/Xã" disabled>
+                                    <option selected>Chọn Phường/Xã</option>
+									<option value="1">Vĩnh Hiệp</option>
+                                    <option value="2">Vĩnh Thuận</option>
+                                    <option value="3">Hòn Sơn</option>
+                                    <option value="4">Hà Tiên</option>
+                                </select>
+                            </div>
+
+                            <p class="fw-bold">Nhà thuốc gợi ý</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="suggestedPharmacy" id="pharmacySuggestion" checked>
+                                <label class="form-check-label" for="pharmacySuggestion">
+                                    466 Nguyễn Trung Trực, Khu phố 5, Rạch Giá, An Giang
+                                </label>
+                                <p class="text-muted small ms-4">Địa chỉ cũ:  466 Nguyễn Trung Trực, Khu phố 5, Rạch Giá, Kiên Giang</p>
+							</div>
+							<div class="form-check">
+                                <input class="form-check-input" type="radio" name="suggestedPharmacy" id="pharmacySuggestion" checked>
+								 <label class="form-check-label" for="pharmacySuggestion">
+                                    1111/6, Lâm Quang Ky, P. An Hoà, Rạch Giá, An Giang
+
+                                </label>
+                                <p class="text-muted small ms-4">Địa chỉ cũ: 1111/6, Lâm Quang Ky, P. An Hoà, Rạch Giá, Kiên Giang</p>
+                            </div>
+							<div class="form-check">
+                                <input class="form-check-input" type="radio" name="suggestedPharmacy" id="pharmacySuggestion" checked>
+								 <label class="form-check-label" for="pharmacySuggestion">
+                                    P30 - Căn 44, 3 Tháng 2, P. An Hoà, Rạch Giá, An Giang
+                                </label>
+                                <p class="text-muted small ms-4">Địa chỉ cũ: P30 - Căn 44, 3 Tháng 2, P. An Hoà, Rạch Giá, Kiên Giang</p>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nearby" role="tabpanel" aria-labelledby="nearby-tab">
+                            <p class="text-muted">Vui lòng cấp quyền truy cập vị trí hoặc tìm kiếm theo địa chỉ để xem nhà thuốc gần bạn nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="card border-0">
+                    <div class="card-body custom-card-body">
+						<p>Ở Đây Bán Thuốc là hệ thống nhà thuốc bán lẻ & phân phối trải khắp 34 tỉnh thành luôn mở rộng để phục vụ Khách hàng trên toàn quốc, cung cấp dịch vụ bán hàng và phục vụ hàng đầu:</p>
+                        
+                        <div class="row mt-4">
+                            
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-shop"></i></div>
+                                    <div class="feature-content">
+                                        <h6>Nhà thuốc chính hãng</h6>
+                                        <p>Sở hữu danh mục thuốc chính hãng vừa đa dạng, phong phú lại vừa chuyên sâu.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-person-lines-fill"></i></div>
+                                    <div class="feature-content">
+                                        <h6>Dược sĩ tư vấn tại chỗ</h6>
+                                        <p>Với kinh nghiệm và chuyên môn cao với 4 tiêu chí: đúng thuốc, đúng liều, đúng cách và đúng giá.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-truck"></i></div>
+                                    <div class="feature-content">
+                                        <h6>Giao hàng tận nơi</h6>
+                                        <p>Giao hàng cực nhanh trong khu vực An Giang và chuyển hàng đến tận nhà tại các tỉnh thành khác.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-clipboard-check"></i></div>
+                                    <div class="feature-content">
+                                        <h6>Chuyển thuốc theo toa</h6>
+                                        <p>Ở Đây Bán Thuốc có đầy đủ các loại thuốc để có thể đáp ứng đầy đủ nhu cầu của người dùng.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-cash-stack"></i></div>
+                                    <div class="feature-content">
+										<h6>Mua lẻ với giá sỉ</h6>
+                                        <p>Sản phẩm chất lượng với giá thấp hơn so với thị trường chung, tương đương với giá bán sỉ.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="bi bi-arrow-left-right"></i></div>
+                                    <div class="feature-content">
+                                        <h6>Đổi trả nguyên đai</h6>
+                                        <p>Chỉ cần đọc SĐT hoặc giữ lại hóa đơn, bạn sẽ được đổi trả / hoàn tiền đã mua trong vòng 30 ngày.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="row">
+                    <div class="col-6">
+                                            </div>
+                    <div class="col-6">
+                                            </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Modal_timkiem -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content mt-5 modal-dialog">
+			<div class="modal-body p-1">
+				<div class="search-box">
+				<input type="text" class="form-control rounded-2" placeholder="Tìm theo tên thuốc, bệnh..." id="searchInput">
+				<div class="search-results mt-2 d-none" id="searchResults">
+					<!--Header-->
+					<div class="p-3 border-bottom">
+						<strong>Lịch sử tìm kiếm</strong>
+					</div>
+					
+					<!--Lịch sử tìm kiếm-->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Omega 3</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Vitamin E</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Kem chống nắng</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Men vi sinh</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Bao cao su</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Footer-->
+<footer class="my-bg-blue-light my-text-light text-center text-lg-start">
+  <div class="container p-4">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="text-uppercase">Ở ĐÂY BÁN THUỐC</h5>
+        <p>
+          Đây là một trang web bán thuốc thuộc hệ thống của nhà thuốc "Ở Đây Bán Thuốc" do 4 bác sĩ đại tài số một thế giới có một không hai đã được học các kiến thức chuyên ngành bằng ChatGPT và Gemini.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Liên kết</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Trang chủ</a></li>
+          <li><a href="assets/product/hethongnhathuoc.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Hệ thống nhà thuốc</a></li>
+          <li><a href="assets/product/chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Giới thiệu</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Thông tin</h5>
+        <ul class="list-unstyled">
+          <li><a href="assets/product/chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Điều khoản</a></li>
+          <li><a href="assets/product/chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Chính sách</a></li>
+          <li><a href="assets/product/chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center p-3 my-bg-blue">
+    © 2025 Ở Đây Bán Thuốc
+  </div>
+</footer>
+
+
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="../card-slider/Cardslider.js"></script>
+
+<script src="../js/timkiem.js"></script>
+<script src="../js/my_style.js"></script>
+</body>
+</html>

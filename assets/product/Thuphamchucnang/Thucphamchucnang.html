@@ -1,0 +1,642 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thực phẩm chức năng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="../../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/bb4a4903bc.js" crossorigin="anonymous"></script>
+
+<!--Card_Slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../card-slider/cardslider.css"/>
+
+<!--color_css-->
+<link rel="stylesheet" type="text/css" href="../../css/color.css">
+
+<!--my_style_css-->
+<link rel="stylesheet" type="text/css" href="../../css/my_style.css">
+<link rel="stylesheet" href="../../css/timkiem.css">
+<link rel="stylesheet" href="../../css/banner.css"/>
+<link rel="stylesheet" href="../../css/Navbar.css"/>
+<link rel="stylesheet" href="../../css/DS.css"/>
+	
+<!--icon web-->
+<link rel="icon" href="../../icon/iconweb.svg" type="image/x-icon">
+</head>
+	
+
+<body>
+<!--Banner-->
+<div class="banner">
+	<div class="container-lg">
+		<div class="row">
+			<a href="../../../index.html" class="col-lg-3 col-md-4 col-sm-5 col-6">
+				<img src="../../img/logo/icon/LOGO_ICON_TEXT.svg" alt="..." class=""/>
+			</a>
+			<div class="col-lg-9 col-md-8 col-sm-7 col-6 d-flex justify-content-end">
+				<div class="d-flex align-items-center gap-2">
+					<!-- Timkiem -->
+					<button type="button" class="btn btn-primary my-custom-btn-blue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-search me-2"></i>
+						<span class="btn-sm d-none d-md-inline">Tìm Kiếm</span>
+					</button>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../GioHang.html">
+						<i class="bi bi-capsule pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Giỏ thuốc</span>
+						<span class="position-absolute rounded-pill translate-middle bg-danger ps-2 pe-2 ms-2 ps-ms-1 pe-ms-1 ms-2" style="font-size: 12px">
+							69
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</a>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../Login.html"> 
+						<i class="bi bi-person-fill pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Đăng nhập</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #e3f2fd;" data-bs-theme="light">
+	<div class="container-lg">
+    <!-- Nút bật menu khi thu nhỏ -->
+    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    	<h1 class="m-0"><i class="bi bi-justify my-text-blue"></i></h1>
+    </button>
+
+	<!-- Menu dạng trượt ngang -->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<img src="../../img/logo/icon/Log2.svg" alt="logo" style="height: 50px;"/>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown" data-bs-auto-close="false">
+						<a class="nav-link dropdown-toggle" href="Thucphamchucnang.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thực phẩm chức năng
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle p-0 m-0 my-text-blue"></i> Vitamin &amp; Khoáng chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-tablets my-text-blue"></i> Sinh lý - Nội tiết tố</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-capsules my-text-blue"></i> Cải thiện tăng cường chức năng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle-medical my-text-blue"></i> Hỗ trợ điều trị</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-poop my-text-blue"></i> Hỗ trợ tiêu hóa</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-brain my-text-blue"></i> Thần kinh não</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-droplet my-text-blue"></i> Hỗ trợ làm đẹp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-heart my-text-blue"></i> Sức khỏ tim mạch</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="Vitamin/Vitamin.html"><i class="fa-solid fa-weight-scale my-text-blue"></i> Dinh dưỡng</a>
+									</div>
+								</div>
+					</li>
+					
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../Chamsocda/Dược mỹ phẩm.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dược mỹ phẩm
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-mask my-text-blue"></i>  Chăm sóc da mặt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-soap my-text-blue"></i>  Chăm sóc cơ thể</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-pump-soap my-text-blue"></i>  Giải pháp làn da</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Chăm sóc tóc - da đầu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-face-grin-hearts my-text-blue"></i>  Mỹ phẩm trang điểm</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-eye my-text-blue"></i>  Chăm sóc da vùng mắt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-leaf my-text-blue"></i>  Sản phẩm từ thiên nhiên</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thuốc-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thuốc
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-magnifying-glass my-text-blue"></i>  Tra cứu thuốc</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bong my-text-blue"></i>  Tra cứu dược chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-cannabis my-text-blue"></i> Tra cứu dược liệu</a>
+									</div>
+								</div>
+					</li>
+
+					<!--Chăm sóc cá nhân-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Chăm sóc cá nhân
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-venus-mars my-text-blue"></i>  Hỗ trợ tình dục</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bread-slice my-text-blue"></i>  Thực phẩm - đồ uống</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Vệ sinh cá nhân</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-tooth my-text-blue"></i>  Chăm sóc răng miệng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-house-chimney-medical my-text-blue"></i>  Đồ dùng gia đình</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-boxes-packing my-text-blue"></i>  Hàng tổng hợp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bottle-droplet my-text-blue"></i>  Tinh dầu các loại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-wine-bottle my-text-blue"></i>  Thiết bị làm đẹp</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thiết bị y tế-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thiết bị y tế
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-syringe my-text-blue"></i>  Dụng cụ y tế</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-stethoscope my-text-blue"></i>  Dụng cụ theo dõi</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-briefcase-medical my-text-blue"></i>  Dụng cụ sơ cứu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-mask-face my-text-blue"></i>  Khẩu trang</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Tiêm chủng-->
+					<a class="nav-link" href="../chuacapnhat.html" role="button" aria-expanded="false">
+						Tiêm chủng
+					</a>	
+
+					<!--Bệnh & Sức khỏe-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Bệnh &amp; Góc sức khỏe
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Góc sức khỏe</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Chuyên trang ung thư</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bookmark my-text-blue"></i>  Bệnh thường gặp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bell my-text-blue"></i>  Tin khuyến mại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-star my-text-blue"></i>  Truyền thông</a>
+									</div>
+								</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!--Breakcrumb-->
+<nav aria-label="breadcrumb" class="container pt-2">
+	<ol class="breadcrumb ps-2">
+		<li class="breadcrumb-item"><a href="TrangChu.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-blue">Trang Chủ</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Thực phẩm chức năng</li>
+	</ol>
+</nav>
+
+<!--Card-->
+<section class="category-section">
+	<div class="container ps-4 pe-4">
+
+	<!-- Danh sách danh mục -->
+	<div class="row g-3">
+
+        <!-- Vitamin -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-prescription-bottle category-icon"></i>
+					<div class="category-title">Vitamin &amp; Khoáng chất</div>
+					<div class="category-count">113 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+		<!-- Sinh lý - Nội tiết tố -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-tablets category-icon"></i>
+					<div class="category-title">Sinh lý - Nội tiết tố</div>
+					<div class="category-count">42 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- Hỗ trợ điều trị -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-capsules category-icon"></i>
+					<div class="category-title">Hỗ trợ điều trị</div>
+					<div class="category-count">125 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+		<!-- Hỗ trợ tiêu hoá -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-poop my-text-blue category-icon"></i>
+					<div class="category-title">Hỗ trợ tiêu hoá</div>
+					<div class="category-count">68 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+		<!--Thần kinh não-->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-brain my-text-blue category-icon"></i>
+					<div class="category-title">Thần kinh não</div>
+					<div class="category-count">40 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- Hỗ trợ làm đẹp -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-droplet category-icon"></i>
+					<div class="category-title">Hỗ trợ làm đẹp</div>
+					<div class="category-count">22 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+		<!-- Sức khoẻ tim mạch -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-heart my-text-blue category-icon"></i>
+					<div class="category-title">Sức khoẻ tim mạch</div>
+					<div class="category-count">23 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+		<!-- Dinh dưỡng -->
+		<div class="col-md-3 col-sm-6">
+			<a href="Vitamin/Vitamin.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<div class="category-card h-100">
+					<i class="fa-solid fa-weight-scale category-icon"></i>
+					<div class="category-title">Dinh dưỡng</div>
+					<div class="category-count">37 sản phẩm</div>
+				</div>
+			</a>
+		</div>
+		  
+	</div>
+	</div>
+</section>
+	
+<h6 class="container ps-4">Vitamin &amp; Khoáng chất</h6>
+<section class="SP-section">
+	<div class="container ps-4 pe-4">
+
+	<!-- Danh sách danh mục -->
+	<div class="row g-3">
+
+        <!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/1.Viên uống Immuvita Easylife.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/1.Viên uống Immuvita Easylife bổ sung vitamin và khoáng chất cho cơ thể, tăng sức khỏe (100 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên uống Immuvita Easylife bổ sung vitamin và khoáng chất cho cơ thể</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>390.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 100 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/2.Siro ống uống Canxi-D3-K2 5ml Kingphar.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/2.Siro ống uống Canxi-D3-K2 5ml Kingphar bổ sung canxi & vitamin D3 cho cơ thể (6 vỉ x 5 ống).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Siro ống uống Canxi-D3-K2 5ml Kingphar</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>105.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 6 Vỉ x 5 Ống</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2 ">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/3.Siro Brauer Baby Kids D3+k2 High Potency MK-7 Drops.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/3.Siro Brauer Baby Kids D3+k2 High Potency MK-7 Drops bổ sung vitamin D3 và vitamin K2 (10ml).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Siro Brauer Baby Kids D3+k2 High Potency MK-7 Drops</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>396.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp x 10ml</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/4.Viên uống Omexxel 3-6-9 Premium.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/4.Viên uống Omexxel 3-6-9 Premium hỗ trợ tốt cho não và mắt (100 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên uống Omexxel 3-6-9 Premium hỗ trợ tốt cho não và mắt</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>453.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 100 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/5.Viên nang mềm NatureCare Omega 369 bổ sung Omega.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/5.Viên nang mềm NatureCare Omega 369 bổ sung Omega, giảm nguy cơ xơ vữa động mạch (6 vỉ x 20 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên nang mềm NatureCare Omega 369 bổ sung Omega</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>570.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 6 vỉ x 20 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/6.Viên uống Brauer Ultra Pure DHA For Pregnancy & Breastfeeding.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/6.Viên uống Brauer Ultra Pure DHA For Pregnancy & Breastfeeding hỗ trợ tăng cường sức khoẻ phụ nữ mang thai và cho con bú (60 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên uống Brauer Ultra Pure DHA For Pregnancy &amp; Breastfeeding</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>550.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 60 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2 mt-auto">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/7.Viên sủi Kudos Kids Multivitamins Plus Calcium & D3 hương dưa hấu.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/7.Viên sủi Kudos Kids Multivitamins Plus Calcium & D3 hương dưa.jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên sủi Kudos Kids Multivitamins Plus Calcium &amp; D3</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>127.200đ</strong></span> 
+						<span class="my-text-light-blue">/ Tuýp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Tuýp 20 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/8.Viên sủi Kudos Daily Vitamins Plus Biotin & Ginseng hương cam.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/8.Viên sủi Kudos Daily Vitamins Plus Biotin & Ginseng hương cam giúp bổ sung vitamin cho cơ thể (20 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên sủi Kudos Daily Vitamins Plus Biotin &amp; Ginseng hương cam</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>111.200đ</strong></span> 
+						<span class="my-text-light-blue">/  Tuýp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Tuýp 20 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/9.Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ sung vitamin C cho cơ thể (20 viên).html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/9.Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ sung vitamin C cho cơ thể (20 viên).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên sủi Kudos Vitamin C 1000mg hương chanh</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>100.800đ</strong></span> 
+						<span class="my-text-light-blue">/ Tuýp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Tuýp 20 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 col-sm-6rounded-3">
+			<a href="Vitamin/10.Viên sủi Kudos Bone hương cam.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/10.Viên sủi Kudos Bone hương cam bổ sung canxi, vitamin K2, vitamin D3 cho cơ thể (20 viên).jpg" class="col-12 p-2 rounded-4 d-flex flex-column" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên sủi Kudos Bone hương cam bổ sung canxi, vitamin K2, vitamin D3</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>100.800đ</strong></span> 
+						<span class="my-text-light-blue">/ Tuýp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Tuýp 20 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/11.Dung dịch Feginic.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/11.Dung dịch Feginic bổ sung sắt cho người thiếu máu do thiếu sắt (4 vỉ x 5 ống x 5ml).jpg" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Dung dịch Feginic bổ sung sắt cho người thiếu máu do thiếu sắt</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>108.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 4 Vỉ x 5 Ống x 5ml</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--SP -->
+		<div class="col-lg-3 col-md-4 col-sm-6 rounded-3">
+			<a href="Vitamin/12.Viên uống Multivitamin +Zn +D3 Royal Care.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<div class="SP-card h-100 d-flex flex-column">
+					<img src="../../img/sanpham/Thực phẩm chức năng/Vitamin - Khoáng chất/12.Viên uống Multivitamin +Zn +D3 Royal Care hỗ trợ tăng cường sức khỏe, nâng cao sức đề kháng (60 viên).png" class="col-12 p-2 rounded-4" alt="tên SP"/>
+					<div class="ps-2 pe-2 pt-1 pb-1"><strong>Viên uống Multivitamin +Zn +D3 Royal Care</strong></div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<span class="my-text-blue"><strong>175.000đ</strong></span> 
+						<span class="my-text-light-blue">/ Hộp</span>
+					</div>
+					<div class="ps-2 pe-2 pt-1 pb-1">
+						<p class="ps-2 pe-2 d-inline-block rounded" style="background-color: #E6E9ED">Hộp 60 viên</p>
+					</div>
+					<div class="ps-2 pe-2 d-flex justify-content-center	 mt-auto">
+					<button class="btn my-custom-btn-blue rounded-5 w-100 mb-2">Chọn mua</button>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		  
+	</div>
+	</div>
+</section>
+
+<!-- Modal_timkiem -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content mt-5 modal-dialog">
+			<div class="modal-body p-1">
+				<div class="search-box">
+				<input type="text" class="form-control rounded-2" placeholder="Tìm theo tên thuốc, bệnh..." id="searchInput">
+				<div class="search-results mt-2 d-none" id="searchResults">
+					<!--Header-->
+					<div class="p-3 border-bottom">
+						<strong>Lịch sử tìm kiếm</strong>
+					</div>
+					
+					<!--Lịch sử tìm kiếm-->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Omega 3</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Vitamin E</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Kem chống nắng</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Men vi sinh</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Bao cao su</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Footer-->
+<footer class="my-bg-blue-light my-text-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="text-uppercase">Ở ĐÂY BÁN THUỐC</h5>
+        <p>
+          Đây là một trang web bán thuốc thuộc hệ thống của nhà thuốc "Ở Đây Bán Thuốc" do 4 bác sĩ đại tài số một thế giới có một không hai đã được học các kiến thức chuyên ngành bằng ChatGPT và Gemini.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Liên kết</h5>
+        <ul class="list-unstyled">
+          <li><a href="../../../index.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Trang chủ</a></li>
+          <li><a href="../hethongnhathuoc.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Hệ thống nhà thuốc</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Giới thiệu</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Thông tin</h5>
+        <ul class="list-unstyled">
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Điều khoản</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Chính sách</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center p-3 my-bg-blue">
+    © 2025 Ở Đây Bán Thuốc
+  </div>
+</footer>
+
+
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="../card-slider/Cardslider.js"></script>
+
+<script src="../js/timkiem.js"></script>
+<script src="../js/my_style.js"></script>
+</body>
+</html>

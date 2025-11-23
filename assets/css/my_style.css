@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Căn modal xuống dưới navbar */
+.modal-dialog {
+  margin-top: 100px !important; /* chỉnh số px tùy bạn, ví dụ 100–150px */
+}
+
+
+/* Ẩn thanh cuộn chuột */
+/* Áp dụng cho toàn trang */
+html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE, Edge cũ */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+    /* Toàn trang */
+    body {
+      margin: 0;
+      padding: 0;
+/*
+      height: 100%;
+      overflow: hidden;
+*/
+    }
+
+    /* Khung nền */
+    #carouselBackground {
+/*      position: relative;*/
+      width: 100%;
+      height: 1080px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+      display: flex;
+/*      align-items: center;*/
+      justify-content: center;
+    }
+
+    /* Carousel nằm phía trên lớp phủ */
+    #carouselExampleFade {
+      position: relative;
+      z-index: 2;
+      width: 65%;
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    /* Nút điều hướng */
+    .carousel-control-prev i,
+    .carousel-control-next i {
+      color: white;
+    }
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 12%; /* căn giữa theo chiều dọc */
+  transform: translateY(-50%);
+}
+
+
+/* Tùy chọn: tăng kích thước icon để đẹp hơn */
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 2rem; /* chỉnh kích thước icon */
+  color: white;
+}
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  height: 600px; /* hoặc chiều cao bạn muốn cho slide */
+}
+
+/* Chỉ thay đổi kích thước Banner khi ở màn hình nhỏ */
+@media (max-width: 988px) {
+  #carouselExampleFade {
+    width: 100% !important; /* Mở rộng khung chứa ảnh */
+  }
+
+  .carousel-item img {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    top: 0 !important;
+    object-fit: contain !important;
+  }
+
+  /* Ẩn nút chuyển hình ở kích thước nhỏ */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+}
+
+
+#carouselBackground {
+  position: relative;
+  z-index: 1;
+}
+
+.giamgia {
+  position: absolute;
+  top: 43%; /* điều chỉnh tùy theo vị trí bạn muốn */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* cao hơn background để nổi lên */
+}
+
+	.body, .html {
+	margin: 0;
+	padding: 0;
+	}
+
+/*Scrollspy*/
+.list-group-item.active {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+footer {
+    margin-top: auto;
+}

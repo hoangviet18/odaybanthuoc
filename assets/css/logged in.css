@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ======================
+   TOÀN TRANG
+   ====================== */
+:root {
+--cv-grad: linear-gradient(90deg,#d8b4f8,#e0bdfc,#f3d9fa);
+--cv-bg: #fafcff;
+--cv-text: #3a2b4f;
+--cv-radius: 50px;
+--cv-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ======================
+   BODY
+   ====================== */
+body {
+  background: var(--cv-bg);
+  color: var(--cv-text);
+}
+/* ======================
+   
+/* =====================================
+   MENU DOC BEN TRAI
+===================================== */
+
+.khung-menu-trai {
+  background: #fff;
+  border-radius:10px;
+  box-shadow: var(--cv-shadow);
+  padding: 24px;
+  height: 100%;
+}
+
+.link-menu-trai {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  color: var(--cv-text);
+  transition: 0.2s;
+}
+/* Hover vao muc ben trai */
+.link-menu-trai:hover {
+  color: #1E90FF;
+
+}
+/* Muc dang duoc chon */
+.link-menu-trai.active {
+  font-weight: 700;
+  background: #fafcff;
+  color: #1E90FF;
+  padding-left: 10px;
+}
+
+/* =====================================
+   CARD SAN PHAM
+===================================== */
+
+footer a:hover {
+  color: #f3d9fa;
+}
+.list-group-item {
+	padding: 14px 20px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.list-group-item:hover {
+	background: #f3f3f3;
+}
+
+.list-group-item.active {
+	background: #e6f8e8;
+	color: #30a130;
+	font-weight: 600;}
+h2 {
+	font-weight: 600;
+	color: #222;}
+h4 {
+	font-weight: bold;
+}																																																	

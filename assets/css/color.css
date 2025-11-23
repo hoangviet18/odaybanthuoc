@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Khai báo các biến màu CSS (Custom Properties) với tiền tố 'my-' */
+:root {
+  --my-primary-blue: #007BFF;   /* Xanh dương chính */
+  --my-light-blue: #1E90FF;     /* Xanh dương sáng */
+  --my-light: #F8F9FA;       /* Xám nhạt (Nền) */
+  --my-dark: #333333;      /* Xám đậm (Chữ) */
+  --my-success: #28A745;  /* Xanh lá cây */
+  --my-warning: #FFC107;  /* Vàng */
+  --my-danger: #DC3545;   /* Đỏ */
+}
+
+/* --- Các lớp CSS mẫu --- */
+
+/* Màu chữ (color) */
+.my-text-blue {
+  color: var(--my-primary-blue);
+}
+
+.my-text-light-blue {
+  color: var(--my-light-blue);
+}
+
+.my-text-dark {
+  color: var(--my-dark);
+}
+
+.my-text-light {
+  color: var(--my-light);
+}
+
+.my-text-success {
+  color: var(--my-success);
+}
+
+.my-text-warning {
+  color: var(--my-warning);
+}
+
+.my-text-danger {
+  color: var(--my-danger);
+}
+
+/* Màu nền (background-color) */
+.my-bg-blue {
+  background-color: var(--my-primary-blue);
+}
+
+.my-bg-blue-light {
+  background-color: var(--my-light-blue);
+}
+
+.my-bg-light {
+  background-color: var(--my-light);
+}
+
+.my-bg-dark {
+  background-color: var(--my-dark);
+}
+
+.my-bg-success {
+  background-color: var(--my-success);
+}
+
+.my-bg-warning {
+  background-color: var(--my-warning);
+}
+
+.my-bg-danger {
+  background-color: var(--my-danger);
+}
+
+/* Tùy chỉnh nút của riêng bạn */
+.my-custom-btn-blue {
+    background-color: var(--my-primary-blue); /* Màu nền cam */
+    color: white;
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.my-custom-btn-blue:hover {
+    background-color: var(--my-light-blue); /* Đổi màu khi di chuột */
+    color: var(--my-light);
+}
+
+.my-custom-btn-light {
+	background-color: #FFFFFF;
+    color: var(--my-dark);
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi */
+}
+.my-custom-btn-light:hover {
+    background-color: var(--my-light);
+    color: var(--my-dark);
+}
+.my-custom-btn-light:active {
+    background-color: var(--my-light-blue);
+    color: var(--my-light);
+}

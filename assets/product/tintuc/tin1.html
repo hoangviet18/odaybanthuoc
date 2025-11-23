@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ở Đây Bán Thuốc - Bệnh đau dạ dày</title> <!--thay-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../../../../../bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="../../../../../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/bb4a4903bc.js" crossorigin="anonymous"></script>
+
+<!--Card_Slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../card-slider/cardslider.css"/>
+
+<!--color_css-->
+<link rel="stylesheet" type="text/css" href="../../css/color.css">
+
+<!--my_style_css-->
+<link rel="stylesheet" type="text/css" href="../../css/my_style.css">
+<link rel="stylesheet" href="../../css/timkiem.css">
+<link rel="stylesheet" href="../../css/banner.css"/>
+<link rel="stylesheet" href="../../css/Navbar.css"/>
+<link rel="stylesheet" href="../../css/DS.css"/>
+	
+<!--icon web-->
+<link rel="icon" href="../../img/logo/icon/iconweb.svg" type="image/x-icon">
+</head>
+	
+
+<body class="my-bg-light">
+<!--Banner-->
+<div class="banner">
+	<div class="container-lg">
+		<div class="row">
+			<a href="../../../index.html" class="col-lg-3 col-md-4 col-sm-5 col-6">
+				<img src="../../img/logo/icon/LOGO_ICON_TEXT.svg" alt="Logo" class=""/>
+			</a>
+			<div class="col-lg-9 col-md-8 col-sm-7 col-6 d-flex justify-content-end">
+				<div class="d-flex align-items-center gap-2">
+					<!-- Timkiem -->
+					<button type="button" class="btn btn-primary my-custom-btn-blue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-search me-2"></i>
+						<span class="btn-sm d-none d-md-inline">Tìm Kiếm</span>
+					</button>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../giohang.html">
+						<i class="bi bi-capsule pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Giỏ thuốc</span>
+						<span class="position-absolute rounded-pill translate-middle bg-danger ps-2 pe-2 ms-2 ps-ms-1 pe-ms-1 ms-2" style="font-size: 12px">
+							69
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</a>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../Login.html"> 
+						<i class="bi bi-person-fill pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Đăng nhập</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg sticky-top bg-white" data-bs-theme="light">
+	<div class="container-lg">
+    <!-- Nút bật menu khi thu nhỏ -->
+    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    	<h1 class="m-0"><i class="bi bi-justify my-text-blue"></i></h1>
+    </button>
+
+	<!-- Menu dạng trượt ngang -->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<img src="../../img/logo/icon/Log2.svg" alt="logo" style="height: 50px;"/>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown" data-bs-auto-close="false">
+						<a class="nav-link dropdown-toggle" href="../Thuphamchucnang/Thucphamchucnang.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thực phẩm chức năng
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle p-0 m-0 my-text-blue"></i> Vitamin &amp; Khoáng chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-tablets my-text-blue"></i> Sinh lý - Nội tiết tố</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-capsules my-text-blue"></i> Cải thiện tăng cường chức năng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle-medical my-text-blue"></i> Hỗ trợ điều trị</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-poop my-text-blue"></i> Hỗ trợ tiêu hóa</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-brain my-text-blue"></i> Thần kinh não</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-droplet my-text-blue"></i> Hỗ trợ làm đẹp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-heart my-text-blue"></i> Sức khỏ tim mạch</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-weight-scale my-text-blue"></i> Dinh dưỡng</a>
+									</div>
+								</div>
+					</li>
+					
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../Chamsocda/Dược mỹ phẩm.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dược mỹ phẩm
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-mask my-text-blue"></i>  Chăm sóc da mặt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-soap my-text-blue"></i>  Chăm sóc cơ thể</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-pump-soap my-text-blue"></i>  Giải pháp làn da</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Chăm sóc tóc - da đầu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-face-grin-hearts my-text-blue"></i>  Mỹ phẩm trang điểm</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-eye my-text-blue"></i>  Chăm sóc da vùng mắt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-leaf my-text-blue"></i>  Sản phẩm từ thiên nhiên</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thuốc-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thuốc
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-magnifying-glass my-text-blue"></i>  Tra cứu thuốc</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bong my-text-blue"></i>  Tra cứu dược chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-cannabis my-text-blue"></i> Tra cứu dược liệu</a>
+									</div>
+								</div>
+					</li>
+
+					<!--Chăm sóc cá nhân-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Chăm sóc cá nhân
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-venus-mars my-text-blue"></i>  Hỗ trợ tình dục</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bread-slice my-text-blue"></i>  Thực phẩm - đồ uống</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Vệ sinh cá nhân</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-tooth my-text-blue"></i>  Chăm sóc răng miệng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-house-chimney-medical my-text-blue"></i>  Đồ dùng gia đình</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-boxes-packing my-text-blue"></i>  Hàng tổng hợp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bottle-droplet my-text-blue"></i>  Tinh dầu các loại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-wine-bottle my-text-blue"></i>  Thiết bị làm đẹp</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thiết bị y tế-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thiết bị y tế
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-syringe my-text-blue"></i>  Dụng cụ y tế</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-stethoscope my-text-blue"></i>  Dụng cụ theo dõi</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-briefcase-medical my-text-blue"></i>  Dụng cụ sơ cứu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-mask-face my-text-blue"></i>  Khẩu trang</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Tiêm chủng-->
+					<a class="nav-link" href="../chuacapnhat.html" role="button" aria-expanded="false">
+						Tiêm chủng
+					</a>	
+
+					<!--Bệnh & Sức khỏe-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Bệnh &amp; Góc sức khỏe
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html#"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Góc sức khỏe</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Chuyên trang ung thư</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bookmark my-text-blue"></i>  Bệnh thường gặp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bell my-text-blue"></i>  Tin khuyến mại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-star my-text-blue"></i>  Truyền thông</a>
+									</div>
+								</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!--noidung-->
+<div class="container w-75 py-5">
+<h2><span class="text-primary"><strong>CÁCH ĐIỀU TRỊ BỆNH ĐAU DẠ DẠY</strong></span></h2>
+	<h3><span class="text-primary">1. Đau dạ dày là gì?</span></h3>
+<h6>Đau dạ dày là tình trạng tổn thương của dạ dày, chủ yếu trên niêm mạc dạ dày. Bệnh thường do viêm loét gây ra. Người bệnh thường trải qua cảm giác đau âm ỉ, không thoải mái và cơn đau thường xuất hiện khi người bệnh ăn quá no hoặc quá đói.
+
+Các cơn đau cũng có thể xuất hiện khi người bệnh làm việc quá sức hoặc trải qua tình trạng căng thẳng. Tâm trạng không ổn định của họ cũng có thể làm tăng cường độ cơn đau.</h6>
+		<h3><span class="text-primary">2. Dấu hiệu đau dạ dày điển hình</span></h3>
+<h6>Các dấu hiệu đau dạ dày thường thể hiện rõ ràng, tuy nhiên, một số trường hợp có thể không xuất hiện những dấu hiệu đặc trưng mà chỉ gặp phải cảm giác đau bụng âm ỉ.</h6>
+	<h4>2.1. Dấu hiệu bệnh dạ dày - Đau thượng vị</h4>
+<h6>Đây là dấu hiệu đau dạ dày thường gặp ở bệnh nhân mắc bệnh và cũng thường xuất hiện ở người bị vấn đề về tá tràng. Bệnh nhân có thể trải qua cảm giác đau âm ỉ và tức vùng bụng, tạo ra cảm giác nóng rát khó chịu.
+
+Cơn đau bụng dữ dội thường không phát sinh khi đau thượng vị. Vị trí đau dạ dày có thể lan từ bụng lên ngực hoặc lan ra phía sau lưng, thường xuất hiện trong khoảng một đến hai tuần vào giai đoạn đầu của bệnh và có thể tái phát. Cơn đau thường tái phát khi thời tiết thay đổi hoặc khi giao mùa.
+
+Nếu để tình trạng kéo dài, bệnh nhân có thể phải đối mặt với cơn đau liên tục:
+
+Ở người bị vấn đề về đau dạ dày tá tràng, cơn đau thường có liên quan đến thời gian ăn uống và thường theo chu kỳ.  
+Cơn đau thường xuất hiện theo chu kỳ ở bệnh nhân mắc viêm loét dạ dày tá tràng.
+Trong trường hợp của người bị ung thư dạ dày, cơn đau bụng thường không tuân theo chu kỳ mà kéo dài liên tục.
+Người mắc loét tá tràng thường cảm thấy đau khi đói.
+Cơn đau thường xuất hiện khi bệnh nhân mắc viêm loét dạ dày sau khi ăn, nhưng không có cảm giác đau khi đói. </h6>
+
+<img src="../../img/tintuc/dau da day.jpg" class="rounded mx-auto d-block" alt="...">
+
+		<h3>2.2. Ăn uống kém hơn</h3>
+<h6>Bệnh nhân đau dạ dày thường ăn kém do lượng thức ăn tiêu thụ giảm hoặc không cảm thấy ngon miệng khi ăn.
+
+Nguyên nhân của hiện tượng này là do thức ăn được tiêu hóa chậm khiến người bệnh cảm thấy đầy bụng, khó chịu và nặng nề sau khi ăn. Họ có thể trải qua cảm giác nóng rát, đau và khó chịu ở vùng thượng vị, sau đó lan ra xương ức và gây ra cảm giác buồn nôn sau khi ăn.</h6>
+		<h3>2.3. Ợ hơi, ợ chua, ợ nóng</h3>
+		<h6>Đây là dấu hiệu đau dạ dày rất quan trọng. Ợ chua và ợ hơi gây ra sự không thoải mái cho người bệnh và ảnh hưởng đến cuộc sống hàng ngày của bệnh nhân.
+
+Nguyên nhân của vấn đề này là do sự rối loạn hoạt động của dạ dày, khiến quá trình tiêu hóa thức ăn gặp khó khăn và dẫn đến tình trạng nổi men. Bệnh nhân đau dạ dày thường gặp các triệu chứng như ợ hơi, ợ chua và đau thượng vị.
+
+Họ có thể cảm nhận vị chua hoặc đắng khi thức ăn hoặc hơi từ dạ dày trở lên đến cổ họng, nhưng chỉ lên một phần, gây ra cảm giác đau ở vùng ức mũi hoặc phía sau xương ức.</h6>
+<h3>2.4. Cảm giác buồn nôn, nôn mửa</h3>
+		<h6>Đây là những dấu hiệu phổ biến của các bệnh lý như viêm dạ dày cấp, viêm loét dạ dày, xuất huyết dạ dày hoặc thậm chí có thể là ung thư dạ dày. Khi người bệnh trải qua cơn nôn nhiều, có thể gây ra các hậu quả nghiêm trọng như rách niêm mạc thực quản, gây ảnh hưởng đến sức khỏe.
+
+Ngoài ra, các cơn nôn có thể dẫn đến mất nước và điện giải từ dịch dạ dày. Các biến chứng nghiêm trọng hơn có thể bao gồm hạ huyết áp và suy tim. Bệnh nhân thường mất cân nhanh chóng, dẫn đến thiếu máu và sự phình nề.</h6>
+	<h3>2.5. Bị chảy máu tiêu hóa</h3>
+	<h6>Sự xuất hiện của máu chảy ra khỏi các mạch máu và đi vào hệ thống tiêu hóa được gọi là chảy máu tiêu hóa. Đây là một dấu hiệu đau dạ dày nghiêm trọng có thể đe dọa tính mạng của người bệnh trong thời gian ngắn. Do đó, khi phát hiện dấu hiệu bệnh dạ dày này, đưa người bệnh đến cơ sở y tế ngay lập tức để được điều trị kịp thời là cực kỳ cần thiết.
+
+Các biểu hiện khi bị chảy máu tiêu hóa bao gồm: nôn ra máu tươi hoặc máu đen, máu xuất hiện trong phân có màu đỏ tươi hoặc màu đen. Người bệnh có thể cảm thấy choáng váng, mờ mắt và tụt huyết áp khi trải qua tình trạng mất máu cấp.
+
+Chảy máu tiêu hóa có thể là dấu hiệu của nhiều bệnh lý, bao gồm: viêm dạ dày cấp do sử dụng thuốc, loét dạ dày tá tràng, hoặc vỡ tĩnh mạch thực quản do bệnh gan... và có thể nghiêm trọng hơn là ung thư dạ dày. </h6>
+<img src="../../img/tintuc/dau da day.jpg&w=620&h=405&checkress=726dd002eff45cf574f168ce54b49e8d" class="rounded mx-auto d-block" alt="...">
+		<h3><span class="text-primary"> 3 Phương pháp chẩn đoán bệnh dạ dày</span></h3>
+<h6>Để chẩn đoán bệnh đau dạ dày, bác sĩ sẽ tiến hành kiểm tra và đặt câu hỏi cho bệnh nhân để hiểu rõ tình trạng bệnh lý của họ. Các câu hỏi này có thể liên quan đến mức độ đau, vị trí đau, và các thay đổi trong thói quen đi tiểu...  
+
+Sau đó, dựa vào từng trường hợp cụ thể, bác sĩ sẽ lựa chọn phương pháp chẩn đoán phù hợp. Để xác định nguyên nhân chính xác, nội soi thực quản dạ dày là phương pháp tốt nhất. Ngoài ra, các phương pháp như siêu âm bụng, chụp CT, MRI hoặc X-quang bụng cũng có thể được thực hiện để chẩn đoán các nguyên nhân khác.</h6>
+
+		<h3><span class="text-primary">4 Làm thế nào để giảm các triệu chứng bệnh dạ dày?</span></h3>
+<h6>Khi xuất hiện dấu hiệu đau dạ dày cấp tính, nhiều người bệnh thường không chú ý đến và các triệu chứng này có thể biến đổi theo từng đợt, khiến bệnh thêm nghiêm trọng và đe dọa đến sức khỏe.
+
+Khi gặp dấu hiệu bệnh dạ dày đáng ngờ, người bệnh cần sớm đến bệnh viện để kiểm tra và chẩn đoán nguyên nhân, phân biệt xem liệu triệu chứng có phải do đau dạ dày hay do các vấn đề sức khỏe khác. Nếu được xác định là dấu hiệu đau dạ dày, bệnh nhân cần được điều trị tích cực để ngăn ngừa bệnh tiến triển thành các biến chứng nguy hiểm.</h6>
+
+	
+</div>
+	
+<!--Tin Khác-->
+<div class="container pb-4">
+	
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-5">
+        <h4 class="fw-bold my-text-blue" style=""><i class="bi bi-newspaper pe-2"></i>Các bản tin khác</h4>
+    </div>
+	<div class="container">
+    	<div class="row g-5">
+
+			<!-- ITEM 1 -->
+<!--
+			<div class="col-4 p-2">
+				<a href="tin1.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<img src="../../img/tintucnoibat/tintuc4.jpg" class="col-12 rounded-4 border" alt="daudaday">
+				 <h5 class="fw-bold mt-2">
+				 Các chịu chứng của đau dạ dày 
+
+				 </h5>
+				 <h6>Các triệu chứng phổ biến của đau dạ dày bao gồm đau vùng thượng vị (trên rốn), ợ hơi, ợ chua, đầy bụng, buồn nôn và chán ăn. Cơn đau có thể âm ỉ hoặc đau nhói, xuất hiện khi đói hoặc sau bữa ăn, và đôi khi có thể lan ra sau lưng...</h6>
+				 <small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+-->
+			
+			<!-- ITEM 2 -->
+			<div class="col-4 p-2">
+				<a href="tin2.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc3.jpg" class="col-12 rounded-4 border" alt="">
+					<h5 class="fw-bold mt-2">
+						Bệnh thiếu máu 
+					</h5>
+					<h6> là một rối loạn giấc ngủ biểu hiện bằng việc khó đi vào giấc ngủ, không ngủ sâu, thường xuyên thức dậy sớm hoặc không ngủ lại được sau khi thức... </h6>
+					<small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+
+			<!-- ITEM 3 -->
+			<div class="col-4 p-2">
+				<a href="tin36.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc2.jpg" class="col-12 rounded-4 border" alt="matngu">
+					<h5 class="fw-bold mt-2">
+						Bệnh mất ngủ 
+					</h5>
+					<h6>là một rối loạn giấc ngủ biểu hiện bằng việc khó đi vào giấc ngủ, không ngủ sâu, thường xuyên thức dậy sớm hoặc không ngủ lại được sau khi thức...</h6>
+					<small class="text-muted">05/11/2025</small>
+				</a>
+			</div>
+
+			<!-- ITEM 4 -->
+			<div class="col-4 p-2">
+				<a href="tin44.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc1.jpg" class="col-12 rounded-4 border" alt="daudau">
+					<h5 class="fw-bold mt-2">
+						Bệnh đâu nửa đầu
+					</h5>
+					<h6>Đau đầu Migraine vẫn thường được gọi là đau nửa đầu, là tình trạng đau đầu một bên một cách đột ngột và dữ dội, đi kèm với các triệu chứng như buồn nôn, nôn mửa, nhạy cảm với ánh sáng và tiếng ồn. Đau nửa đầu bên trái và đau nửa đầu bên ...</h6>
+					<small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+	
+<!--Modal_timkiem -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content mt-5 modal-dialog">
+			<div class="modal-body p-1">
+				<div class="search-box">
+				<input type="text" class="form-control rounded-2" placeholder="Tìm theo tên thuốc, bệnh..." id="searchInput">
+				<div class="search-results mt-2 d-none" id="searchResults">
+					<!--Header-->
+					<div class="p-3 border-bottom">
+						<strong>Lịch sử tìm kiếm</strong>
+					</div>
+					
+					<!--Lịch sử tìm kiếm-->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Omega 3</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Vitamin E</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Kem chống nắng</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Men vi sinh</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Bao cao su</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Footer-->
+<footer class="my-bg-blue-light my-text-light text-center text-lg-start">
+  <div class="container p-4">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="text-uppercase">Ở ĐÂY BÁN THUỐC</h5>
+        <p>
+          Đây là một trang web bán thuốc thuộc hệ thống của nhà thuốc "Ở Đây Bán Thuốc" do 4 bác sĩ đại tài số một thế giới có một không hai đã được học các kiến thức chuyên ngành bằng ChatGPT và Gemini.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Liên kết</h5>
+        <ul class="list-unstyled">
+          <li><a href="../../../index.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Trang chủ</a></li>
+          <li><a href="../hethongnhathuoc.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Hệ thống nhà thuốc</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Giới thiệu</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Thông tin</h5>
+        <ul class="list-unstyled">
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Điều khoản</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Chính sách</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center p-3 my-bg-blue">
+    © 2025 Ở Đây Bán Thuốc
+  </div>
+</footer>
+
+
+
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="../../card-slider/Cardslider.js"></script>
+
+<script src="../../js/timkiem.js"></script>
+<script src="../../js/my_style.js"></script>
+</body>
+</html>

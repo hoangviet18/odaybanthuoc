@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner {
+	width: 100%;
+	height: 120px; /* hoặc chiều cao bạn muốn */
+	background-image: url("../img/banner/TOP2.png"); /* thay bằng ảnh của bạn */
+	background-size: cover;       /* tự phóng/thu để phủ kín */
+	background-position: center;  /* canh giữa */
+	background-repeat: no-repeat; /* không lặp ảnh */
+	display: flex; 
+	align-items: center;
+	}

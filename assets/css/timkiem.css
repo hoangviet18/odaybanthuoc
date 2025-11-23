@@ -1,0 +1,83 @@
+
+@charset "utf-8";
+ CSS Document 
+
+body {
+  background-color: #f5f5f5;
+}
+
+.search-box {
+  max-width: auto;
+  margin: auto auto;
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.search-results .list-group-item:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.search-results.fade {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.search-results.show {
+  opacity: 1;
+}
+
+
+
+
+.history-item {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.history-item.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.search-results .list-group-item:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.history-item {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.history-item.fade-in {
+  opacity: 1;
+}
+
+

@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ở Đây Bán Thuốc - Bện mất ngủ</title> <!--thay-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../../../../../bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="../../../../../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/bb4a4903bc.js" crossorigin="anonymous"></script>
+
+<!--Card_Slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../card-slider/cardslider.css"/>
+
+<!--color_css-->
+<link rel="stylesheet" type="text/css" href="../../css/color.css">
+
+<!--my_style_css-->
+<link rel="stylesheet" type="text/css" href="../../css/my_style.css">
+<link rel="stylesheet" href="../../css/timkiem.css">
+<link rel="stylesheet" href="../../css/banner.css"/>
+<link rel="stylesheet" href="../../css/Navbar.css"/>
+<link rel="stylesheet" href="../../css/DS.css"/>
+	
+<!--icon web-->
+<link rel="icon" href="../../img/logo/icon/iconweb.svg" type="image/x-icon">
+</head>
+	
+
+<body class="my-bg-light">
+<!--Banner-->
+<div class="banner">
+	<div class="container-lg">
+		<div class="row">
+			<a href="../../../index.html" class="col-lg-3 col-md-4 col-sm-5 col-6">
+				<img src="../../img/logo/icon/LOGO_ICON_TEXT.svg" alt="Logo" class=""/>
+			</a>
+			<div class="col-lg-9 col-md-8 col-sm-7 col-6 d-flex justify-content-end">
+				<div class="d-flex align-items-center gap-2">
+					<!-- Timkiem -->
+					<button type="button" class="btn btn-primary my-custom-btn-blue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-search me-2"></i>
+						<span class="btn-sm d-none d-md-inline">Tìm Kiếm</span>
+					</button>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../giohang.html">
+						<i class="bi bi-capsule pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Giỏ thuốc</span>
+						<span class="position-absolute rounded-pill translate-middle bg-danger ps-2 pe-2 ms-2 ps-ms-1 pe-ms-1 ms-2" style="font-size: 12px">
+							69
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</a>
+
+					<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="../Login.html"> 
+						<i class="bi bi-person-fill pe-1"></i>
+						<span class="btn-sm d-none d-md-inline">Đăng nhập</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg sticky-top bg-white" data-bs-theme="light">
+	<div class="container-lg">
+    <!-- Nút bật menu khi thu nhỏ -->
+    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    	<h1 class="m-0"><i class="bi bi-justify my-text-blue"></i></h1>
+    </button>
+
+	<!-- Menu dạng trượt ngang -->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<img src="../../img/logo/icon/Log2.svg" alt="logo" style="height: 50px;"/>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown" data-bs-auto-close="false">
+						<a class="nav-link dropdown-toggle" href="../Thuphamchucnang/Thucphamchucnang.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thực phẩm chức năng
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle p-0 m-0 my-text-blue"></i> Vitamin &amp; Khoáng chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-tablets my-text-blue"></i> Sinh lý - Nội tiết tố</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-capsules my-text-blue"></i> Cải thiện tăng cường chức năng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-prescription-bottle-medical my-text-blue"></i> Hỗ trợ điều trị</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-poop my-text-blue"></i> Hỗ trợ tiêu hóa</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-brain my-text-blue"></i> Thần kinh não</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-droplet my-text-blue"></i> Hỗ trợ làm đẹp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-heart my-text-blue"></i> Sức khỏ tim mạch</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Thuphamchucnang/Vitamin/Vitamin.html"><i class="fa-solid fa-weight-scale my-text-blue"></i> Dinh dưỡng</a>
+									</div>
+								</div>
+					</li>
+					
+					<!--Dược mỹ phẩm-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../Chamsocda/Dược mỹ phẩm.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dược mỹ phẩm
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-mask my-text-blue"></i>  Chăm sóc da mặt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-soap my-text-blue"></i>  Chăm sóc cơ thể</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-pump-soap my-text-blue"></i>  Giải pháp làn da</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Chăm sóc tóc - da đầu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-face-grin-hearts my-text-blue"></i>  Mỹ phẩm trang điểm</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-eye my-text-blue"></i>  Chăm sóc da vùng mắt</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../Chamsocda/Chăm sóc da mặt.html"><i class="fa-solid fa-leaf my-text-blue"></i>  Sản phẩm từ thiên nhiên</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thuốc-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thuốc
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-magnifying-glass my-text-blue"></i>  Tra cứu thuốc</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bong my-text-blue"></i>  Tra cứu dược chất</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-cannabis my-text-blue"></i> Tra cứu dược liệu</a>
+									</div>
+								</div>
+					</li>
+
+					<!--Chăm sóc cá nhân-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Chăm sóc cá nhân
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-venus-mars my-text-blue"></i>  Hỗ trợ tình dục</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bread-slice my-text-blue"></i>  Thực phẩm - đồ uống</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-droplet my-text-blue"></i>  Vệ sinh cá nhân</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-tooth my-text-blue"></i>  Chăm sóc răng miệng</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-house-chimney-medical my-text-blue"></i>  Đồ dùng gia đình</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-boxes-packing my-text-blue"></i>  Hàng tổng hợp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bottle-droplet my-text-blue"></i>  Tinh dầu các loại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-wine-bottle my-text-blue"></i>  Thiết bị làm đẹp</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Thiết bị y tế-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thiết bị y tế
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-syringe my-text-blue"></i>  Dụng cụ y tế</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-stethoscope my-text-blue"></i>  Dụng cụ theo dõi</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-briefcase-medical my-text-blue"></i>  Dụng cụ sơ cứu</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-mask-face my-text-blue"></i>  Khẩu trang</a>
+									</div>
+								</div>
+					</li>	
+
+					<!--Tiêm chủng-->
+					<a class="nav-link" href="../chuacapnhat.html" role="button" aria-expanded="false">
+						Tiêm chủng
+					</a>	
+
+					<!--Bệnh & Sức khỏe-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="../chuacapnhat.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Bệnh &amp; Góc sức khỏe
+						</a>
+								<div class="dropdown-menu p-1 border-0 shadow-lg">
+									<div class="card border-0">
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html#"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Góc sức khỏe</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-hand-holding-medical my-text-blue"></i>  Chuyên trang ung thư</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bookmark my-text-blue"></i>  Bệnh thường gặp</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-bell my-text-blue"></i>  Tin khuyến mại</a>
+										<a class="dropdown-item pt-2 pb-2 my-custom-btn-light rounded" href="../chuacapnhat.html"><i class="fa-solid fa-star my-text-blue"></i>  Truyền thông</a>
+									</div>
+								</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!--noidung-->
+<div class="container w-75 py-5">
+	<h2><span class="text-primary"><strong>CÁCH ĐIỀU TRỊ BỆNH MẤT NGỦ</strong></span></h2>
+	<h3><span class="text-primary">1.Tổng quan bệnh Mất ngủ
+Mất ngủ là gì?</span></h3>
+<h6>
+Giấc ngủ đóng vai trò quan trọng trong đời sống của mỗi con người, giúp con người được nghỉ ngơi sau những khoảng thời gian làm việc và học tập.
+
+Mất ngủ là một rối loạn giấc ngủ phổ biến có thể bao gồm ngủ không sâu giấc, khó đi vào giấc ngủ, thức dậy quá sớm và không thể quay lại giấc ngủ và vẫn có thể cảm thấy mệt mỏi khi thức dậy. Mất ngủ có thể gây tình trạng mệt mỏi khó chịu ảnh hưởng nghiêm trọng đến hiệu suất làm việc và chất lượng cuộc sống.
+
+Trung bình một người bình thường ngủ từ 7- 8 tiếng/ngày trong đó giấc ngủ phải đảm bảo đủ về thời gian, đủ sâu và cảm thấy thỏa mái khỏe khoắn sau khi thức dậy.
+
+Mất ngủ bao gồm: Mất ngủ cấp tính và mất ngủ mạn tính. Mất ngủ mạn tính là tình trạng mất ngủ kéo dài trong vòng ít nhất là 1 tháng. Mất ngủ cấp tính là mất ngủ kéo dài dưới 1 tháng.
+
+Bị mất ngủ là tình trạng phổ biến hiện nay không chỉ ảnh hưởng đến người già và còn gặp ở những người trẻ tuổi do nhiều nguyên nhân khác nhau. Những thay đổi về thói quen ngày hàng ngày có thể giúp cải thiện giấc ngủ trên một số đối tượng.</h6>
+		<h3><span class="text-primary">2.Nguyên nhân bệnh Mất ngủ</span></h3>
+<h6>Áp lực về công việc, trường học, sức khỏe, tài chính hoặc gia đình có thể khiến tâm trí hoạt động nhiều vào ban đêm, khiến bạn khó ngủ. Các sự kiện căng thẳng trong cuộc sống hoặc chấn thương - chẳng hạn như cái chết hoặc bệnh tật của người thân, ly dị hoặc mất việc - cũng có thể dẫn đến chứng mất ngủ.
+
+Thói quen ngủ kém. Thói quen ngủ kém bao gồm lịch đi ngủ không đều, ngủ trưa, kích thích các hoạt động trước khi đi ngủ, môi trường ngủ không thoải mái và sử dụng giường của bạn để làm việc, ăn hoặc xem TV. Máy tính, TV, trò chơi video, điện thoại thông minh hoặc màn hình khác ngay trước khi đi ngủ có thể cản trở chu kỳ giấc ngủ của bạn.
+
+Ăn quá nhiều vào buổi tối. Có một bữa ăn nhẹ trước khi đi ngủ là được, nhưng ăn quá nhiều có thể khiến bạn cảm thấy khó chịu về thể chất khi nằm. Nhiều người cũng bị ợ nóng, một dòng axit và thức ăn từ dạ dày vào thực quản sau khi ăn, có thể khiến bạn tỉnh táo.
+
+Lịch trình du lịch hoặc làm việc. Nhịp sinh học của bạn hoạt động như một chiếc đồng hồ bên trong, hướng dẫn những thứ như chu kỳ đánh thức giấc ngủ, trao đổi chất và nhiệt độ cơ thể. Làm gián đoạn nhịp sinh học của cơ thể bạn có thể dẫn đến mất ngủ. Nguyên nhân bao gồm độ trễ của máy bay do di chuyển qua nhiều múi giờ, làm việc muộn hoặc sớm hoặc thay đổi thường xuyên.</h6>
+	<h3><span class="text-primary">3.Đối tượng nguy cơ bệnh Mất ngủ</span></h3>
+<h6>Giới tính là nữ. Sự thay đổi nội tiết tố trong chu kỳ kinh nguyệt và trong thời kỳ mãn kinh có thể đóng một vai trò. Trong thời kỳ mãn kinh, đổ mồ hôi đêm và bốc hỏa thường làm gián đoạn giấc ngủ. Mất ngủ cũng phổ biến với thai kỳ.
+
+Tuổi trên 60 tuổi. Vì những thay đổi trong giấc ngủ và sức khỏe, chứng mất ngủ tăng theo tuổi tác.
+
+Rối loạn sức khỏe tâm thần hoặc tình trạng sức khỏe thể chất. Nhiều vấn đề ảnh hưởng đến sức khỏe tinh thần hoặc thể chất của bạn có thể làm gián đoạn giấc ngủ.
+
+Căng thẳng tinh thần. Thời gian căng thẳng và các sự kiện có thể gây ra chứng mất ngủ tạm thời. Và căng thẳng lớn hoặc kéo dài có thể dẫn đến mất ngủ mãn tính.
+
+Thay đổi giờ giấc làm việc. Ví dụ, thay đổi ca làm việc hoặc đi du lịch có thể làm gián đoạn chu kỳ ngủ-thức. </h6>
+
+<img src="../../img/tintuc/bệnh mất ngủ.jpg" class="rounded mx-auto d-block" alt="...">
+
+	<h3><span class="text-primary">4.Phòng ngừa bệnh Mất ngủ</span></h3>	
+<h6>Thói quen ngủ tốt có thể giúp ngăn ngừa chứng mất ngủ và thúc đẩy giấc ngủ ngon:
+
+Giữ thời gian đi ngủ và thời gian thức nhất quán từ ngày này sang ngày khác, kể cả cuối tuần.
+
+Duy trì hoạt động - hoạt động thường xuyên giúp thúc đẩy giấc ngủ ngon.
+
+Kiểm tra thuốc để xem nếu chúng có thể góp phần vào chứng mất ngủ.
+
+Tránh hoặc hạn chế ngủ trưa.
+
+Tránh hoặc hạn chế cafein và rượu, và không sử dụng nicotine.
+
+Tránh các bữa ăn lớn và đồ uống trước khi đi ngủ.
+
+Tạo một nghi thức thư giãn trước khi đi ngủ, chẳng hạn như tắm nước ấm, đọc sách hoặc nghe nhạc nhẹ.</h6>
+<h3><span class="text-primary">5.Các biện pháp điều trị bệnh Mất ngủ</span></h3>
+<h6>Thay đổi thói quen ngủ của bạn và giải quyết bất kỳ vấn đề nào có thể liên quan đến chứng mất ngủ, chẳng hạn như căng thẳng, tình trạng y tế hoặc thuốc, có thể khôi phục giấc ngủ yên tĩnh cho nhiều người. Nếu các biện pháp này không hiệu quả, bác sĩ có thể khuyên bạn nên trị liệu hành vi nhận thức, thuốc hoặc cả hai, để giúp cải thiện thư giãn và giấc ngủ.
+
+Liệu pháp hành vi nhận thức cho chứng mất ngủ( CBT-I) có thể giúp bạn kiểm soát hoặc loại bỏ những suy nghĩ và hành động tiêu cực khiến bạn tỉnh táo và thường được khuyến cáo là phương pháp điều trị đầu tiên cho những người bị mất ngủ. Thông thường, CBT-I có hiệu quả tương đương hoặc nhiều hơn so với thuốc ngủ.
+
+Phần hành vi của CBT-I giúp bạn hình thành thói quen ngủ tốt và tránh những hành vi khiến bạn không ngủ ngon. Các chiến lược bao gồm, ví dụ:
+
+Liệu pháp kiểm soát kích thích. Phương pháp này giúp loại bỏ các yếu tố khiến tâm trí bạn chống lại giấc ngủ. Ví dụ, bạn có thể được huấn luyện để thiết lập thời gian ngủ và thức dậy phù hợp và tránh ngủ trưa, chỉ sử dụng giường để ngủ và quan hệ tình dục, và rời khỏi phòng ngủ nếu bạn không thể đi ngủ trong vòng 20 phút, chỉ trở về khi bạn ngái ngủ.
+
+Kỹ thuật thư giãn. Thư giãn cơ bắp tiến bộ, phản hồi sinh học và các bài tập thở là những cách để giảm lo lắng khi đi ngủ. Thực hành các kỹ thuật này có thể giúp bạn kiểm soát nhịp thở, nhịp tim, căng cơ và tâm trạng để bạn có thể thư giãn.
+
+Hạn chế giấc ngủ. Liệu pháp này làm giảm thời gian bạn nằm trên giường và tránh những giấc ngủ ngắn vào ban ngày, gây thiếu ngủ một phần, khiến bạn mệt mỏi hơn vào đêm hôm sau. Một khi giấc ngủ của bạn được cải thiện, thời gian của bạn trên giường sẽ tăng dần.
+
+</h6>
+
+	</div>
+	
+<!--Tin Khác-->
+<div class="container pb-4">
+	
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-5">
+        <h4 class="fw-bold my-text-blue" style=""><i class="bi bi-newspaper pe-2"></i>Các bản tin khác</h4>
+    </div>
+	<div class="container">
+    	<div class="row g-5">
+
+			<!-- ITEM 1 -->
+			<div class="col-4 p-2">
+				<a href="tin1.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+				<img src="../../img/tintucnoibat/tintuc4.jpg" class="col-12 rounded-4 border" alt="daudaday">
+				 <h5 class="fw-bold mt-2">
+				 Các chịu chứng của đau dạ dày 
+
+				 </h5>
+				 <h6>Các triệu chứng phổ biến của đau dạ dày bao gồm đau vùng thượng vị (trên rốn), ợ hơi, ợ chua, đầy bụng, buồn nôn và chán ăn. Cơn đau có thể âm ỉ hoặc đau nhói, xuất hiện khi đói hoặc sau bữa ăn, và đôi khi có thể lan ra sau lưng...</h6>
+				 <small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+			
+			<!-- ITEM 2 -->
+			<div class="col-4 p-2">
+				<a href="tin2.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc3.jpg" class="col-12 rounded-4 border" alt="">
+					<h5 class="fw-bold mt-2">
+						Bệnh thiếu máu 
+					</h5>
+					<h6> là một rối loạn giấc ngủ biểu hiện bằng việc khó đi vào giấc ngủ, không ngủ sâu, thường xuyên thức dậy sớm hoặc không ngủ lại được sau khi thức... </h6>
+					<small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+
+			<!-- ITEM 3 -->
+<!--
+			<div class="col-4 p-2">
+				<a href="tin36.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc2.jpg" class="col-12 rounded-4 border" alt="matngu">
+					<h5 class="fw-bold mt-2">
+						Bệnh mất ngủ 
+					</h5>
+					<h6>là một rối loạn giấc ngủ biểu hiện bằng việc khó đi vào giấc ngủ, không ngủ sâu, thường xuyên thức dậy sớm hoặc không ngủ lại được sau khi thức...</h6>
+					<small class="text-muted">05/11/2025</small>
+				</a>
+			</div>
+-->
+
+			<!-- ITEM 4 -->
+			<div class="col-4 p-2">
+				<a href="tin44.html" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark">
+					<img src="../../img/tintucnoibat/tintuc1.jpg" class="col-12 rounded-4 border" alt="daudau">
+					<h5 class="fw-bold mt-2">
+						Bệnh đâu nửa đầu
+					</h5>
+					<h6>Đau đầu Migraine vẫn thường được gọi là đau nửa đầu, là tình trạng đau đầu một bên một cách đột ngột và dữ dội, đi kèm với các triệu chứng như buồn nôn, nôn mửa, nhạy cảm với ánh sáng và tiếng ồn. Đau nửa đầu bên trái và đau nửa đầu bên ...</h6>
+					<small class="text-muted">07/11/2025</small>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+	
+<!--Modal_timkiem -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content mt-5 modal-dialog">
+			<div class="modal-body p-1">
+				<div class="search-box">
+				<input type="text" class="form-control rounded-2" placeholder="Tìm theo tên thuốc, bệnh..." id="searchInput">
+				<div class="search-results mt-2 d-none" id="searchResults">
+					<!--Header-->
+					<div class="p-3 border-bottom">
+						<strong>Lịch sử tìm kiếm</strong>
+					</div>
+					
+					<!--Lịch sử tìm kiếm-->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Omega 3</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Vitamin E</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Kem chống nắng</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Men vi sinh</a></li>
+						<li class="list-group-item"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 my-text-dark"><i class="bi bi-clock-history me-2"></i> Bao cao su</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Footer-->
+<footer class="my-bg-blue-light my-text-light text-center text-lg-start">
+  <div class="container p-4">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="text-uppercase">Ở ĐÂY BÁN THUỐC</h5>
+        <p>
+          Đây là một trang web bán thuốc thuộc hệ thống của nhà thuốc "Ở Đây Bán Thuốc" do 4 bác sĩ đại tài số một thế giới có một không hai đã được học các kiến thức chuyên ngành bằng ChatGPT và Gemini.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Liên kết</h5>
+        <ul class="list-unstyled">
+          <li><a href="../../../index.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Trang chủ</a></li>
+          <li><a href="../hethongnhathuoc.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Hệ thống nhà thuốc</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Giới thiệu</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-uppercase">Thông tin</h5>
+        <ul class="list-unstyled">
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Điều khoản</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Chính sách</a></li>
+          <li><a href="../chuacapnhat.html" class="my-text-light link-offset-2 link-underline link-underline-opacity-0">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center p-3 my-bg-blue">
+    © 2025 Ở Đây Bán Thuốc
+  </div>
+</footer>
+
+
+
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="../../card-slider/Cardslider.js"></script>
+
+<script src="../../js/timkiem.js"></script>
+<script src="../../js/my_style.js"></script>
+</body>
+</html>
