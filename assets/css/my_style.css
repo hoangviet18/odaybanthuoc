@@ -125,6 +125,39 @@ body::-webkit-scrollbar {
 	padding: 0;
 	}
 
+/* Nếu chiều cao trình duyệt quá thấp (do zoom lớn) */
+@media (max-height: 1000px) {
+  .giamgia {
+    position: absolute!important;
+	top: 43%;
+  }
+@media (max-height: 900px) {
+  .giamgia {
+    position: absolute!important;
+	top: 45%;
+  }
+@media (max-height: 800px) {
+  .giamgia {
+    position: absolute!important;
+	top: 50%;
+  }
+@media (max-height: 700px) {
+  .giamgia {
+    position: absolute!important;
+	top: 58%;
+  }
+@media (max-height: 600px) {
+  .giamgia {
+    position: absolute!important;
+	top: 70%;
+  }
+@media (max-height: 500px) {
+  .giamgia {
+    position: absolute!important;
+	top: 80%;
+  }	
+
+
 /*Scrollspy*/
 .list-group-item.active {
     background-color: transparent !important;
